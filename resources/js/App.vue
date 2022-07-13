@@ -53,6 +53,8 @@ ul{
 
 .card{
     margin: 10px 0;
+    padding: 10px;
+    background-image: linear-gradient(#7d8b94 10%, #fff) ;
 }
 
 

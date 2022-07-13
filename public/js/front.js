@@ -1994,7 +1994,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 exports.i(__webpack_require__(/*! -!../../node_modules/css-loader??ref--7-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!bootstrap/dist/css/bootstrap.css */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/bootstrap/dist/css/bootstrap.css"), "");
 
 // module
-exports.push([module.i, "\nul{\n    list-style: none;\n}\n.card{\n    margin: 10px 0;\n}\n\n\n", ""]);
+exports.push([module.i, "\nul{\n    list-style: none;\n}\n.card{\n    margin: 10px 0;\n    padding: 10px;\n    background-image: linear-gradient(#7d8b94 10%, #fff) ;\n}\n\n\n", ""]);
 
 // exports
 
