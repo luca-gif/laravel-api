@@ -1953,7 +1953,7 @@ var render = function render() {
       key: post.id
     }, [_c("div", {
       staticClass: "card"
-    }, [_c("b", [_vm._v("Titolo post:")]), _vm._v(" " + _vm._s(post.title) + "\n           "), _c("b", [_vm._v("Messaggio:")]), _vm._v(" " + _vm._s(post.content) + "\n           "), _c("b", [_vm._v("Categoria:")]), _vm._v(" " + _vm._s(post.category.name))])]);
+    }, [_c("b", [_vm._v("Titolo post:")]), _vm._v(" " + _vm._s(post.title) + "\n           "), _c("b", [_vm._v("Messaggio:")]), _vm._v(" " + _vm._s(post.content) + "\n           "), post.category ? _c("span", [_c("b", [_vm._v("Categoria:")]), _vm._v(" " + _vm._s(post.category.name))]) : _vm._e()])]);
   }), 0)])]);
 };
 
@@ -1994,7 +1994,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 exports.i(__webpack_require__(/*! -!../../node_modules/css-loader??ref--7-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!bootstrap/dist/css/bootstrap.css */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/bootstrap/dist/css/bootstrap.css"), "");
 
 // module
-exports.push([module.i, "\nul{\n    list-style: none;\n}\n.card{\n    margin: 10px 0;\n    padding: 10px;\n    background-image: linear-gradient(#7d8b94 10%, #fff) ;\n}\n\n\n", ""]);
+exports.push([module.i, "\nul{\n    list-style: none;\n}\n.card{\n    margin: 10px 0;\n    padding: 10px;\n    background-image: linear-gradient(#c2c2c2 10%, #fff) ;\n}\n\n", ""]);
 
 // exports
 
@@ -14953,12 +14953,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue */ "./resources/js/App.vue");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
-window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"); //importo axios globalmente
+
 var app = new Vue({
   el: "#app",
   render: function render(h) {
     return h(_App_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
-  }
+  } //formula per innestare App.vue in #app
+
 });
 
 /***/ }),
@@ -14970,7 +14972,7 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Boolean\Laravel\laravel-api\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\Boolean\Laravel\laravel-boolpress\resources\js\front.js */"./resources/js/front.js");
 
 
 /***/ })

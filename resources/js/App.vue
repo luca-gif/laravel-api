@@ -5,9 +5,10 @@
         <ul>
         <li v-for="post in posts" :key="post.id">
            <div class="card">
-          <b>Titolo post:</b> {{post.title}}
+           <b>Titolo post:</b> {{post.title}}
            <b>Messaggio:</b> {{post.content}}
-           <b>Categoria:</b> {{post.category.name}}</div>
+           <span v-if="post.category"><b>Categoria:</b> {{post.category.name}}</span>
+           </div>
         </li>
     </ul>
     </div>
@@ -50,12 +51,10 @@ ul{
 }
 
 
-
 .card{
     margin: 10px 0;
     padding: 10px;
-    background-image: linear-gradient(#7d8b94 10%, #fff) ;
+    background-image: linear-gradient(#c2c2c2 10%, #fff) ;
 }
-
 
 </style>

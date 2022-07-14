@@ -11,7 +11,7 @@ class PageController extends Controller
     public function index()
     {
 
-        $posts = Post::with('category')->get();
+        $posts = Post::orderBy('id', 'desc')->with('category')->get();
 
         return response()->json($posts);
     }
